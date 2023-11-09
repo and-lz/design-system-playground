@@ -5,7 +5,7 @@ export const Shape = styled.div`
   border-radius: var(--radius-size-none);
   padding: var(--spacing-size-sm);
   background-color: var(--neutral-color-1);
-  width: 300px;
+  width: 30ch;
   display: grid;
   grid-template-rows: 1fr max-content;
 `;
