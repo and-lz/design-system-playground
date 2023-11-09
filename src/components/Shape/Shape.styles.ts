@@ -6,4 +6,6 @@ export const Shape = styled.div`
   padding: var(--spacing-size-sm);
   background-color: var(--neutral-color-1);
   width: 300px;
+  display: grid;
+  grid-template-rows: 1fr max-content;
 `;

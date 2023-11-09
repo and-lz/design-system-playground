@@ -11,6 +11,8 @@ export const Button = styled.button`
   color: var(--neutral-color-1);
   background-color: var(--brand-color-primary-3);
   cursor: pointer;
+  transition: background 250ms ease;
+  will-change: background;
 
   &:hover {
     background-color: var(--brand-color-primary-4);
