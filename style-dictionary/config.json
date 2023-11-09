@@ -1,0 +1,21 @@
+{
+    "source": ["./style-dictionary/*.json"],
+    "platforms": {
+      "web": {
+        "transforms": ["size/px", "attribute/cti","name/cti/kebab","time/seconds" ,"content/icon","color/css"],
+        "buildPath": "./src/assets/",
+        "files": [{
+          "destination": "_variables.scss",
+          "format": "scss/variables"
+        }]
+      },
+        "web2": {
+        "transforms": ["size/px", "attribute/cti","name/cti/kebab","time/seconds" ,"content/icon","color/css"],
+        "buildPath": "./src/assets/",
+        "files": [{
+          "destination": "_variables.css",
+          "format": "css/variables"
+        }]
+      }
+    }
+  }
