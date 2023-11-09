@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-  font-size: var(--font-size-lg);
-  line-height: var(--line-height-distant);
-  font-family: var(--font-family-highlight);
-  font-weight: var(--font-weight-bold);
+  font: var(--font-weight-bold) var(--font-size-lg) / var(--line-height-distant)
+    var(--font-family-highlight);
   color: var(--neutral-color-5);
 `;
