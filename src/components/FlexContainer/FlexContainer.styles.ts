@@ -6,4 +6,5 @@ export const GridContainer = styled.div`
   gap: 2rem;
   width: min(90%, 1280px);
   margin: 50px auto;
+  justify-content: center;
 `;

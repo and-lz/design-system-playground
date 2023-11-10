@@ -1,4 +1,4 @@
-import Button from "../Button/Button";
+import { ReactNode } from "react";
 import { Header } from "../Header/Header";
 import { Paragraph } from "../Paragraph/Paragraph";
 import { Shape } from "../Shape/Shape";
@@ -9,11 +9,11 @@ export interface Props {
   heading: string;
   subtitle: string;
   paragraph: string;
-  buttonLabel: string;
+  children: ReactNode;
 }
 
 export const Card = (props: Props) => {
-  const { heading, subtitle, paragraph, buttonLabel } = props;
+  const { heading, subtitle, paragraph, children } = props;
   return (
     <Shape>
       <Spacer size="xxxs">
@@ -25,7 +25,7 @@ export const Card = (props: Props) => {
       <Spacer size="sm">
         <Paragraph>{paragraph}</Paragraph>
       </Spacer>
-      <Button>{buttonLabel}</Button>
+      {children}
     </Shape>
   );
 };

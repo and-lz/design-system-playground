@@ -1,12 +1,13 @@
 import { render } from "@testing-library/react";
 import { Card, Props } from "./Card";
+import Button from "../Button/Button";
 
 describe("Card component", () => {
   const testData: Props = {
     heading: "Test Heading",
     subtitle: "Test Subtitle",
     paragraph: "Test Paragraph",
-    buttonLabel: "Test Button",
+    children: <Button>Test Button</Button>,
   };
 
   it("renders Card with correct props", () => {

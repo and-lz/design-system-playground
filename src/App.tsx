@@ -1,3 +1,4 @@
+import Button from "./components/Button/Button";
 import { Card } from "./components/Card/Card";
 import FlexContainer from "./components/FlexContainer/FlexContainer";
 import { Header } from "./components/Header/Header";
@@ -19,10 +20,15 @@ function App() {
         universities.map((university) => (
           <Card
             heading={university.name}
-            paragraph={university.country}
-            subtitle={university.domains.join(", ")}
-            buttonLabel="More details"
-          ></Card>
+            paragraph={"Description about the university goes here"}
+            subtitle={`${university.alpha_two_code} ${university.country}`}
+          >
+            <Button
+              onClick={() => window.open(`http://${university.domains[0]}`)}
+            >
+              More detials
+            </Button>
+          </Card>
         ))}
     </FlexContainer>
   );
