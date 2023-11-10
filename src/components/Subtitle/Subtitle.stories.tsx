@@ -1,17 +1,17 @@
 import { Meta, StoryFn } from "@storybook/react";
-import { Paragraph } from "./Paragraph";
+import { Subtitle } from "./Subtitle";
 import { ComponentWithChildren } from "../types";
 
 export default {
-  title: "Paragraph",
-  component: Paragraph,
+  title: "Subtitle",
+  component: Subtitle,
 } as Meta;
 
 const Template: StoryFn<ComponentWithChildren> = (args) => (
-  <Paragraph {...args} />
+  <Subtitle {...args} />
 );
 
 export const Default = Template.bind({});
 Default.args = {
-  children: "Sample paragraph text goes here.",
+  children: "Sample Subtitle Text",
 };

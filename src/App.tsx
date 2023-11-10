@@ -1,5 +1,5 @@
 import { Card } from "./components/Card/Card";
-import GridContainer from "./components/GridContainer/GridContainer";
+import FlexContainer from "./components/FlexContainer/FlexContainer";
 import { Header } from "./components/Header/Header";
 import useUniversityData from "./hooks/useUniversitiesData";
 
@@ -8,13 +8,13 @@ function App() {
 
   if (isLoading)
     return (
-      <GridContainer>
+      <FlexContainer>
         <Header>Carregando...</Header>
-      </GridContainer>
+      </FlexContainer>
     );
 
   return (
-    <GridContainer>
+    <FlexContainer>
       {universities &&
         universities.map((university) => (
           <Card
@@ -24,7 +24,7 @@ function App() {
             buttonLabel="More details"
           ></Card>
         ))}
-    </GridContainer>
+    </FlexContainer>
   );
 }
 

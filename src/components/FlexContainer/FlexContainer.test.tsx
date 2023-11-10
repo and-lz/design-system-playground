@@ -1,12 +1,12 @@
 import { render } from "@testing-library/react";
-import GridContainer from "./GridContainer";
+import FlexContainer from "./FlexContainer";
 
 describe("GridContainer component", () => {
   it("renders children inside GridContainer", () => {
     const { getByText } = render(
-      <GridContainer>
+      <FlexContainer>
         <div>Hello, World!</div>
-      </GridContainer>
+      </FlexContainer>
     );
 
     const childElement = getByText("Hello, World!");

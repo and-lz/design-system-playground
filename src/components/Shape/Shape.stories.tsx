@@ -5,7 +5,7 @@ export default {
   component: Shape,
 } as Meta;
 
-const Template: StoryFn = (args) => <Shape {...args} />;
+const Template: StoryFn = (args) => <Shape children={undefined} {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

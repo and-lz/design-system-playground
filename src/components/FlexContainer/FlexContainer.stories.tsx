@@ -1,12 +1,15 @@
 import { Meta, StoryFn } from "@storybook/react";
-import GridContainer, { Props } from "./GridContainer";
+import FlexContainer from "./FlexContainer";
+import { ComponentWithChildren } from "../types";
 
 export default {
-  title: "GridContainer",
-  component: GridContainer,
+  title: "FlexContainer",
+  component: FlexContainer,
 } as Meta;
 
-const Template: StoryFn<Props> = (args) => <GridContainer {...args} />;
+const Template: StoryFn<ComponentWithChildren> = (args) => (
+  <FlexContainer {...args} />
+);
 
 export const Default = Template.bind({});
 Default.args = {
