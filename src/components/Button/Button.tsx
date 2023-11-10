@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { Button as Container } from "./Button.styles";
 
-interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
 }
 

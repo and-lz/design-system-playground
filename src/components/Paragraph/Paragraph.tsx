@@ -1,6 +1,6 @@
 import { Paragraph as Container } from "./Paragraph.styles";
 
-interface Props {
+export interface Props {
   children: string;
 }
 

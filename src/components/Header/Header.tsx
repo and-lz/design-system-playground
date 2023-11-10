@@ -1,6 +1,6 @@
 import { Header as Container } from "./Header.styles";
 
-interface Props {
+export interface Props {
   children: string;
 }
 
