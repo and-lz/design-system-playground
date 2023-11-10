@@ -1,2 +1,7 @@
 @import url("../src/assets/_variables.css");
 @import url('https://fonts.googleapis.com/css2?family=Archivo');
+
+* {
+    padding: 0;
+    margin: 0;
+}

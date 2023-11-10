@@ -81,4 +81,6 @@ Cria uma versão pronta para produção do seu Storybook, útil para mostrar e c
 - Jest é o framework de teste escolhido, proporcionando um ambiente robusto e flexível de testes.
 - Storybook está incluído para o desenvolvimento e teste orientado por componentes.
 
-Sinta-se à vontade para personalizar e estender os comandos e configurações com base nos requisitos específicos do seu projeto. Feliz codificação!
+### Loom
+
+https://www.loom.com/share/91c67b02e2c8409280bbc35c70b13c27
