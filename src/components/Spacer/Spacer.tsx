@@ -1,8 +1,7 @@
-import { ReactNode } from "react";
 import { Spacer as Container, Spaces } from "./Space.styles";
+import { ComponentWithChildren } from "../types";
 
-interface Props {
-  children: ReactNode;
+interface Props extends ComponentWithChildren {
   size?: Spaces;
 }
 

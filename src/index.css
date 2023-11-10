@@ -1,6 +1,2 @@
 @import url("../src/assets/_variables.css");
 @import url('https://fonts.googleapis.com/css2?family=Archivo');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

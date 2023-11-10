@@ -1,5 +1,6 @@
+import { ComponentWithChildren } from "../types";
 import { Shape as Container } from "./Shape.styles";
 
-export const Shape = ({ ...props }) => {
+export function Shape(props: ComponentWithChildren) {
   return <Container>{props.children}</Container>;
-};
+}

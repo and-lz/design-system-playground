@@ -4,7 +4,7 @@ import { Header } from "./components/Header/Header";
 import useUniversityData from "./hooks/useUniversitiesData";
 
 function App() {
-  const { universities, isLoading } = useUniversityData(); // Use the custom hook to fetch data
+  const { universities, isLoading } = useUniversityData();
 
   if (isLoading)
     return (

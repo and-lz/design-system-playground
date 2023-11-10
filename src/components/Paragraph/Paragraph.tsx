@@ -1,10 +1,7 @@
+import { ComponentWithChildren } from "../types";
 import { Paragraph as Container } from "./Paragraph.styles";
 
-export interface Props {
-  children: string;
-}
-
-export const Paragraph = (props: Props) => {
+export const Paragraph = (props: ComponentWithChildren) => {
   const { children } = props;
   return <Container>{children}</Container>;
 };
